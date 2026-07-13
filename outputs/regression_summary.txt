@@ -1,0 +1,49 @@
+=== Main model: NDVI ~ Rainfall Index (two-way FE, clustered SE) ===
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   NDVI   R-squared:                       0.905
+Model:                            OLS   Adj. R-squared:                  0.875
+Method:                 Least Squares   F-statistic:                     58.05
+Date:                Mon, 13 Jul 2026   Prob (F-statistic):           1.09e-07
+Time:                        06:38:08   Log-Likelihood:                 207.05
+No. Observations:                  72   AIC:                            -378.1
+Df Residuals:                      54   BIC:                            -337.1
+Df Model:                          17                                         
+Covariance Type:              cluster                                         
+=========================================================================================
+                            coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+Intercept                 0.6299      0.015     41.372      0.000       0.600       0.660
+C(county)[T.Brooks]       0.0180    5.8e-16    3.1e+13      0.000       0.018       0.018
+C(county)[T.Bulloch]      0.0054   2.22e-16   2.45e+13      0.000       0.005       0.005
+C(county)[T.Coffee]       0.0032   2.95e-16   1.08e+13      0.000       0.003       0.003
+C(county)[T.Colquitt]    -0.0290   4.54e-16  -6.37e+13      0.000      -0.029      -0.029
+C(county)[T.Crisp]       -0.0491   4.08e-16  -1.21e+14      0.000      -0.049      -0.049
+C(county)[T.Dooly]       -0.0496   7.37e-16  -6.72e+13      0.000      -0.050      -0.050
+C(county)[T.Irwin]       -0.0307   3.37e-16  -9.13e+13      0.000      -0.031      -0.031
+C(county)[T.Mitchell]    -0.0293   2.69e-16  -1.09e+14      0.000      -0.029      -0.029
+C(county)[T.Turner]      -0.0335   4.96e-16  -6.75e+13      0.000      -0.033      -0.033
+C(county)[T.Wilcox]       0.0130   5.97e-16   2.18e+13      0.000       0.013       0.013
+C(county)[T.Worth]       -0.0241   3.31e-16   -7.3e+13      0.000      -0.024      -0.024
+C(year)[T.2020]          -0.0223      0.012     -1.875      0.061      -0.046       0.001
+C(year)[T.2021]          -0.0403      0.013     -3.158      0.002      -0.065      -0.015
+C(year)[T.2022]          -0.0156      0.008     -1.885      0.059      -0.032       0.001
+C(year)[T.2023]           0.0360      0.007      4.947      0.000       0.022       0.050
+C(year)[T.2024]           0.0534      0.012      4.602      0.000       0.031       0.076
+rainfall_index            0.0003      0.000      1.574      0.115   -8.46e-05       0.001
+==============================================================================
+Omnibus:                        3.114   Durbin-Watson:                   1.846
+Prob(Omnibus):                  0.211   Jarque-Bera (JB):                2.695
+Skew:                          -0.178   Prob(JB):                        0.260
+Kurtosis:                       3.878   Cond. No.                     1.49e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 1.49e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Rainfall Index coefficient (beta): 0.00035
+p-value: 0.1154
+=> No statistically significant co-movement detected at 5% level.
