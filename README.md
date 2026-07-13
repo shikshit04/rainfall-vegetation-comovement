@@ -35,6 +35,12 @@ products (Yield Protection, Revenue Protection, STAX, Area Risk Protection
 Insurance) - a companion repo re-targets this same NDVI data at those products 
 instead.
 
+## Related work
+
+This analysis has a companion piece built in ArcGIS: [Index Insurance and Basis Risk: A GIS Illustration](https://arcg.is/0Xjn5W3), 
+which covers the same basis-risk concept visually, using real Sentinel-2 imagery, land cover classification, and a computed rainfall 
+index for these same Georgia counties.
+
 ## Research question
 
 **Does satellite-measured vegetation health (NDVI) move together with a 
